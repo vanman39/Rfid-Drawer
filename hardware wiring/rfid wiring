@@ -1,0 +1,7 @@
+rfid vcc - 3.3v 
+rfid gnd - gnd
+rfid rst - gpio 4
+rfid sda/ss - gpio 5
+rfid mosi - gpio 23
+rfid miso - gpio 19
+rfid sck - gpio 18 

@@ -1,3 +1,3 @@
-Plug the servo power vcc wire into the 5v of the esp32 and the gnd to the respectable gnd pin
-Add the signal pin to gpio 13 of the servo according to the codebase
-Put the 1000uF capacitor with the positive pin in the 5v rail and connect the megative to gnd
+plug the vin or 5v pin from the esp32 into an available red rail on your 430 pin breadboard and add your capacitor to have the short leg to gnd (blue line of the rail set) and long leg to the 5v rail
+plug the gnd pin on the esp32 to the blue rail and then connect the brown wire or gnd wire of the servo to the blue the 5v red wire to the red rail
+plug yellow or your signal wire to gpio 12

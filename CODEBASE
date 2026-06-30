@@ -29,7 +29,7 @@ void loop() {
   // 1. RFID Logic: Open and hold
   if (mfrc522.PICC_IsNewCardPresent() && mfrc522.PICC_ReadCardSerial()) {
     Serial.println("Card detected! Opening drawer...");
-    myServo.write(90); // Opens and stays at 90
+    myServo.write(123); // Opens and stays at 90
     mfrc522.PICC_HaltA();
   }
 

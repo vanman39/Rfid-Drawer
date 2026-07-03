@@ -1,0 +1,3 @@
+Wire 1 corner to your gnd and the opposite corner diagonal ways to d14 esp32
+can be my keyboard switch or the tactile button (my stls are the keyboard switch version)
+wire the short leg of led to gnd and the 3.3v d15 pin to the long leg

@@ -1,8 +1,8 @@
-rfid vcc - 3.3v esp32
-rfid gnd - esp32 gnd
-rfid rst - d22 esp32
-rfid miso - d19 esp32
-rfid mosi - d23 esp32
-rfid sck - d18 esp32
-rfid nss/sda - d5 esp32
-irq - empty
+3.3V: Connect to Row 16, Column J.
+GND: Connect to Row 17, Column J.
+SPI Pins:
+  SS/SDA: GPIO 5.
+  SCK: GPIO 18.
+  MOSI: GPIO 23.
+  MISO: GPIO 19.
+  RST: GPIO 22.

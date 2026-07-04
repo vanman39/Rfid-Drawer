@@ -1,5 +1,10 @@
 SPECIAL WIRE COMES INTO PLAY HERE
 you will put your small tiny stripped female end into the keyboard switch and align the stripped wire out of the hole then plug it in 
 then seal both of the special wires in and route the stripped ends between the 2 holes then plug your stuffed female wires into those stripped emds and you are done
-the keyboard switch us bi directuional just plug one end into d14 and the other into gnd
-the led is much simpler put it in the mount short leg to gnd and long leg to d15.
+
+Keyboard Switch (Button):
+  Connect one terminal to GND (Row 1, Column A).
+  Connect the other terminal to GPIO 14.
+LED:
+  Short Leg (GND): Connect to Row 17, Column I.
+  Long Leg (Anode): Connect to GPIO 15.

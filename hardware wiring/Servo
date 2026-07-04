@@ -1,3 +1,3 @@
-plug the vin or 5v pin from the esp32 into an available red rail on your 430 pin breadboard and add your capacitor to have the short leg to gnd (blue line of the rail set) and long leg to the 5v rail
-plug the gnd pin on the esp32 to the blue rail and then connect the brown wire or gnd wire of the servo to the blue the 5v red wire to the red rail
-plug yellow or your signal wire to gpio 12
+GND: Connect to Row 1, Column B.
+5V: Connect to Row 2, Column A.
+Signal: Connect to GPIO 12 on the ESP32.

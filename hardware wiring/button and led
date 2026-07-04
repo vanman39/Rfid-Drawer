@@ -1,3 +1,5 @@
-Wire 1 corner to your gnd and the opposite corner diagonal ways to d14 esp32
-can be my keyboard switch or the tactile button (my stls are the keyboard switch version)
-wire the short leg of led to gnd and the 3.3v d15 pin to the long leg
+SPECIAL WIRE COMES INTO PLAY HERE
+you will put your small tiny stripped female end into the keyboard switch and align the stripped wire out of the hole then plug it in 
+then seal both of the special wires in and route the stripped ends between the 2 holes then plug your stuffed female wires into those stripped emds and you are done
+the keyboard switch us bi directuional just plug one end into d14 and the other into gnd
+the led is much simpler put it in the mount short leg to gnd and long leg to d15.

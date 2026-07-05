@@ -9,19 +9,18 @@ BOM
 -1 9g servo
 -1 1000 uf capacitor 25v
 -1 130 pin breadboard
+-1 keyboard switch
 NOTE: the servo is on 5v and the rfid is on 3.3v and the esp32 is floating
 Libraries for codebase: ESP32Servo and MFRC522 and preferences
 
 
-NOTE ON WIRING
-To achieve a low-profile connection that fits within the keyboard switch mount, I created a custom "bridge" interconnect. Follow these steps:
+Custom Potted Connection (Keyboard Switch Interface)
+To create a low-profile, permanent connection for the keyboard switch, I used a custom potting method to replace standard heat-shrink and DuPont housings:
 
-Prepare the female wire: Take a female Dupont wire and trim it, leaving approximately 7mm of wire exposed. Strip 4mm of the silicone insulation off the end.
+Preparation: Cut a female DuPont wire and strip 6mm of insulation.
 
-Prepare the male wire: Take a male Dupont wire and expose about 4mm of the metal pin.
+Mounting: Plug the female header onto the switch terminal. Secure the header body directly to the internal case wall using hot glue to prevent any mechanical movement.
 
-Assemble the bridge: Insert the exposed 4mm male pin into a separate female Dupont connector housing.
+Routing: Pass the stripped wire ends through the designated holes in the lid.
 
-Connect: Insert the stripped 4mm end of your prepared female wire into that same female housing so it makes contact with the male pin.
-
-Secure: Use the 3D-printed cap to hold the assembly in place on the switch terminal.
+The "Potting" Seal: Once the lid is positioned, join the stripped wire ends to the corresponding female DuPont headers. Instead of using heat shrink, encapsulate the entire joint in hot glue. This acts as both electrical insulation and a permanent mechanical "potting" to prevent shorts and wire fatigue.

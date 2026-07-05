@@ -1,7 +1,7 @@
 SPECIAL WIRE COMES INTO PLAY HERE
-you will put your small tiny stripped female end into the keyboard switch and align the stripped wire out of the hole then plug it in 
-then seal both of the special wires in and route the stripped ends between the 2 holes then plug your stuffed female wires into those stripped emds and you are done
-
+you will plug your female end of the 1 directional cut wire into the keyboard switch and then glue that dupoint casing to the pla wall
+then route the stripped end through the cap pull tight and then seal with hot glue and then plug the stripped ends into your female wires
+going 1 wire to gnd and 1 wire to d14 does not matter orientation.
 Keyboard Switch (Button):
   Connect one terminal to GND (Row 1, Column A).
   Connect the other terminal to GPIO 14.

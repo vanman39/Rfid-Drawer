@@ -13,6 +13,7 @@ BOM
 NOTE: the servo is on 5v and the rfid is on 3.3v and the esp32 is floating
 Libraries for codebase: ESP32Servo and MFRC522 and preferences
 
+rfid drawer-layout.png is the wiring layout for the project yellow is data red is high power rails and black is gnd
 
 Custom Potted Connection (Keyboard Switch Interface)
 To create a low-profile, permanent connection for the keyboard switch, I used a custom potting method to replace standard heat-shrink and DuPont housings:

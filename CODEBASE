@@ -77,6 +77,6 @@ void loop() {
     Serial.println("locking...");
     digitalWrite(LEDPIN, LOW);
     myServo.write(123);
-    delay(200);
+    delay(350);
   }
 }

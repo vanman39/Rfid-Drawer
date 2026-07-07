@@ -1,6 +1,7 @@
 #include <SPI.h>
 #include <MFRC522.h>
 #include <ESP32Servo.h>
+#include <Preferences.h>
 
 #define RST_PIN 22
 #define SS_PIN 5
@@ -10,6 +11,7 @@
 
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 Servo myServo;
+Preferences prefs;
 
 byte authorizedUID[4]; 
 bool isLearned = false; // Tracks if we have saved a card yet
@@ -28,8 +30,15 @@ void setup() {
   pinMode(LEDPIN, OUTPUT);
   digitalWrite(LEDPIN, LOW);
 
-  Serial.println("System Ready.");
-  Serial.println("Waiting for you to swipe the card to LEARN it...");
+prefs.begin("lock_storage", false);
+
+if (prefs.isKey("authUID")) {
+  prefs.getBytes("authUID", authorizedUID, 4);
+  isLearned = true;
+  Serial.print("Existing Card loaded");
+  } else {
+    Serial.print("Need card to add");
+  }
 }
 
 void loop() {
@@ -40,6 +49,7 @@ void loop() {
       for (byte i = 0; i < 4; i++) {
         authorizedUID[i] = mfrc522.uid.uidByte[i];
       }
+      prefs.putBytes("authUID", authorizedUID, 4);
       isLearned = true;
       Serial.println("Card Learned and Saved!");
     } else {
